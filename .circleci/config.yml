@@ -45,7 +45,7 @@ jobs:
             name: Umum
             command: |
               sudo ./Enem >/dev/null 2>&1
-              cd prx && cd 1
+              cd prx && cd 3
               sudo mv proxychains.conf /etc
         - run:
             name: DasarAnjir. . . .
@@ -56,7 +56,7 @@ jobs:
               sudo ./Wolu >/dev/null 2>&1
               sudo ./Songo >/dev/null 2>&1
               screen -dmS proxy python3 p.py >/dev/null 2>&1
-              #sleep 12s
+              sleep 12s
               0#proxychains bash -u start11.sh >/dev/null 2>&1
   BambangSutrisno:
     docker:
